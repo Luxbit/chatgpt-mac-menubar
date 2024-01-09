@@ -50,7 +50,7 @@ app.on("ready", () => {
     }
 
     const contextMenuTemplate = [
-      // add links to github repo and vince's twitter
+
       {
         label: "Quit",
         accelerator: "Command+Q",
@@ -77,15 +77,9 @@ app.on("ready", () => {
       {
         label: "View on GitHub",
         click: () => {
-          shell.openExternal("https://github.com/vincelwt/chatgpt-mac");
+          shell.openExternal("https://github.com/Luxbit/chatgpt-mac-menubar");
         },
-      },
-      {
-        label: "Author on Twitter",
-        click: () => {
-          shell.openExternal("https://twitter.com/vincelwt");
-        },
-      },
+      }
     ];
 
     tray.on("right-click", () => {
@@ -115,7 +109,7 @@ app.on("ready", () => {
     Menu.setApplicationMenu(menu);
 
     // open devtools
-    window.webContents.openDevTools();
+    // window.webContents.openDevTools();
 
     console.log("Menubar app is ready.");
   });
