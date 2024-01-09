@@ -29,7 +29,7 @@ app.on("ready", () => {
         webviewTag: true,
         // nativeWindowOpen: true,
       },
-      width: 450,
+      width: 770,
       height: 550,
     },
     tray,
@@ -115,7 +115,7 @@ app.on("ready", () => {
     Menu.setApplicationMenu(menu);
 
     // open devtools
-    // window.webContents.openDevTools();
+    window.webContents.openDevTools();
 
     console.log("Menubar app is ready.");
   });

@@ -1,14 +1,14 @@
 {
-  "name": "chatgpt-mac",
-  "productName": "chatgpt-mac",
-  "version": "0.0.5",
-  "description": "Menubar app for ChatGPT",
+  "name": "chatgpt-mac-menubar",
+  "productName": "chatgpt-mac-menubar",
+  "version": "1.0.0",
+  "description": "ChatGPT for macOS menubar",
   "main": "index.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package --arch arm64,x64",
-    "make": " electron-forge make --arch arm64,x64",
-    "publish": "electron-forge publish --arch arm64,x64",
+    "start": "yarn electron-forge start",
+    "package": "yarn electron-forge package --arch arm64,x64",
+    "make": "yarn electron-forge make --arch arm64,x64",
+    "publish": "yarn electron-forge publish --arch arm64,x64",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [
@@ -17,8 +17,8 @@
     "mac"
   ],
   "author": {
-    "name": "Vince Loewe",
-    "email": "vince@lyser.io"
+    "name": "Olivier Puraye",
+    "email": "puraye@puraye.com"
   },
   "license": "MIT",
   "dependencies": {
